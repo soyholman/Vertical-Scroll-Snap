@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,500;1,600&display=swap");
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins',serif;
+background: #f4fcfe;
+}
+$color-3:#f4fcfe;
+
+.container{
+
+    display: grid;
+    height: 100vh;
+h1{
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    animation: anim 3s ease;
+}
+}
+
+@keyframes anim{
+
+0%{
+opacity: 0;
+transform: translateY(-70px);
+}
+
+100%{
+opacity: 1;
+transform: translateX(0px);
+}
+
+}
+
+.vetical-snap{
+margin: 0 auto;
+animation: anim 3s ease;
+grid-auto-flow: row;
+gap:1rem;
+width: calc(180px + 1rem);
+padding: 1rem;
+height: 480px;
+overflow-y: auto;
+overscroll-behavior-y: contain;
+scroll-snap-type: y mandatory;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+>a{
+
+
+    scroll-snap-align: center;
+}
+
+
+img{
+    width: 180px;
+   object-fit: contain;
+   border-radius: 1rem;
+}
+}
