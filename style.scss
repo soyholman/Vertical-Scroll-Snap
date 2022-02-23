@@ -37,6 +37,23 @@ transform: translateX(0px);
 
 }
 
+
+::-webkit-scrollbar-thumb{
+
+    background: #90A4AE;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+
+    background: #CFD8DC;
+    border-radius: 30px;
+}
+
 .vetical-snap{
 margin: 0 auto;
 animation: anim 3s ease;
